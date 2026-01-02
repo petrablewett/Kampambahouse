@@ -92,13 +92,14 @@ p {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav-menu a {
   font-family: 'Lato', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   color: var(--text-dark);
   text-decoration: none;
   letter-spacing: 0.1em;
