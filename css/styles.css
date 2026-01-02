@@ -114,7 +114,7 @@ p {
 .btn-book {
   background-color: var(--dark-brown);
   color: var(--off-white);
-  padding: 0.7rem 1.8rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
@@ -182,9 +182,9 @@ p {
 }
 
 .btn {
-  padding: 0.7rem 1.8rem;
+  padding: 0.5rem 1.2rem;
   font-family: 'Lato', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
