@@ -1,0 +1,91 @@
+KAMPAMBA HOUSE WEBSITE - CONFIGURATION TEMPLATE
+==============================================
+
+Keep this file for your records. Fill in the information below
+as you configure your website.
+
+CONTACT INFORMATION
+-------------------
+Business Name: Kampamba House
+General Email: info@kampambahouse.com
+Bookings Email: bookings@kampamba.house
+Phone: +260 951 586 142
+WhatsApp:
+Address: Outskirts of Lusaka, Zambia
+
+SOCIAL MEDIA LINKS
+------------------
+Facebook:
+Instagram:
+Twitter/X:
+
+PAYMENT/BANK DETAILS
+--------------------
+Bank Name: FNB
+Account Name: BLEWETT BURGESS LIMITED
+Account Number: 63119024402
+Branch Name: CAIRO ROAD
+Branch Code: 260050
+Swift Code: FIRNZMLX
+Mobile Money (if applicable):
+
+GOOGLE CALENDAR INTEGRATION
+---------------------------
+Calendar ID:
+Google API Key:
+Date Configured:
+
+HOSTING INFORMATION
+-------------------
+Hosting Provider:
+Login URL:
+Username:
+FTP Hostname:
+Domain Name:
+Nameservers:
+
+FORM BACKEND
+------------
+Service Used (Formspree/EmailJS/Custom):
+Endpoint/API Key:
+Notification Email:
+
+WEBSITE URLS
+------------
+Live Website:
+Admin/Control Panel:
+
+PRICING (Current)
+-----------------
+Hill View Double Cottage: K2,000/night
+Hill View Studio Cottage: K1,500/night
+Glamping Cottage: K1,200/night
+Private Wine Tasting: K1,000/person (min 8 people)
+Public Wine Tasting: K1,000/person (last Saturday/month)
+Photoshoot Session: K500/session (3 hours)
+
+MAINTENANCE NOTES
+-----------------
+Last Updated:
+Updated By:
+Backup Location:
+Developer Contact:
+
+IMPORTANT REMINDERS
+-------------------
+☐ Renew domain annually
+☐ Update calendar with new bookings
+☐ Check form submissions daily
+☐ Back up website monthly
+☐ Update prices as needed
+☐ Refresh photos seasonally
+☐ Monitor Google Analytics
+
+TECHNICAL NOTES
+---------------
+Google Fonts Used: Cormorant Garamond, Lato
+FullCalendar Version: 6.1.10
+Compatible Browsers: Chrome, Firefox, Safari, Edge (latest versions)
+
+---
+Save this file in a secure location!

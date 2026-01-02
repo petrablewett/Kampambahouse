@@ -1,0 +1,116 @@
+KAMPAMBA HOUSE - IMAGE REQUIREMENTS
+===================================
+
+Please add your professional photos to this directory and the gallery subdirectory.
+
+REQUIRED IMAGES FOR MAIN PAGES:
+-------------------------------
+
+Main Directory (images/)
+------------------------
+1. hero.jpg - Homepage hero background (landscape, 1920x1080px or larger)
+   → Beautiful wide shot of the property, hills, or sunset
+
+2. about.jpg - About section image (landscape, 1200x800px)
+   → Welcoming shot of grounds or exterior
+
+3. accommodations-hero.jpg - Accommodations page header (landscape, 1920x1080px)
+   → Showcase of cottages or property view
+
+4. experiences-hero.jpg - Experiences page header (landscape, 1920x1080px)
+   → Wine tasting setup or outdoor activities
+
+5. gallery-hero.jpg - Gallery page header (landscape, 1920x1080px)
+   → Stunning property shot
+
+6. booking-hero.jpg - Booking page header (landscape, 1920x1080px)
+   → Inviting property view
+
+COTTAGE PHOTOS:
+--------------
+7. hillview-double.jpg - Hill View Double Cottage exterior (landscape, 1200x800px)
+8. hillview-studio.jpg - Hill View Studio Cottage exterior (landscape, 1200x800px)
+9. glamping.jpg - Glamping Cottage exterior (landscape, 1200x800px)
+
+EXPERIENCE PHOTOS:
+-----------------
+10. wine-tasting.jpg - Wine tasting setup or event (landscape, 1200x800px)
+11. photoshoot.jpg - Example photoshoot or scenic location (landscape, 1200x800px)
+
+
+GALLERY IMAGES (images/gallery/)
+--------------------------------
+
+Hill View Double Cottage (3 images):
+- hillview-double-1.jpg (exterior/landscape view)
+- hillview-double-interior.jpg (living area/interior)
+- hillview-double-bedroom.jpg (bedroom)
+
+Hill View Studio Cottage (2 images):
+- hillview-studio-1.jpg (exterior/landscape view)
+- hillview-studio-interior.jpg (interior/studio space)
+
+Glamping Cottage (2 images):
+- glamping-1.jpg (exterior/setting)
+- glamping-interior.jpg (interior/amenities)
+
+Property Grounds (4 images):
+- grounds-1.jpg (landscape/gardens)
+- grounds-2.jpg (hill views)
+- grounds-3.jpg (nature trails/paths)
+- sunset.jpg (sunset view from property)
+
+Experiences (4 images):
+- wine-tasting-1.jpg (wine tasting event)
+- wine-tasting-2.jpg (wine selection/setup)
+- photoshoot-1.jpg (engagement/portrait example)
+- photoshoot-2.jpg (another photoshoot example)
+
+Additional (2 images):
+- outdoor-seating.jpg (outdoor seating/relaxation area)
+- veranda.jpg (cottage veranda/porch)
+
+
+IMAGE GUIDELINES:
+----------------
+- Format: JPG (JPEG) preferred
+- Quality: High resolution, well-lit, professional
+- Style: Natural, warm, inviting
+- Orientation: Most should be landscape (horizontal)
+- Size: Optimize for web (100-500 KB per image after compression)
+- Naming: Use exact filenames listed above
+
+TOTAL IMAGES NEEDED: 27+
+
+Optional: Add more gallery images to showcase your property!
+
+
+TIPS FOR GREAT PHOTOS:
+---------------------
+✓ Shoot during golden hour (sunrise/sunset) for warm lighting
+✓ Keep photos bright and airy
+✓ Show the cottage interiors clean and well-staged
+✓ Include shots of the views guests will enjoy
+✓ Capture the peaceful, relaxing atmosphere
+✓ Show unique features and amenities
+✓ Include some detail shots (wine glasses, decor, etc.)
+✓ Make sure photos are sharp and in focus
+
+
+IMAGE OPTIMIZATION:
+------------------
+Before uploading, compress images to reduce file size:
+- Use tools like TinyPNG.com or Squoosh.app
+- Target 100-300 KB per image
+- Maintain visual quality while reducing file size
+- This helps your website load faster
+
+
+PLACEHOLDER REMINDER:
+--------------------
+The website currently references these image paths.
+Until you add your photos, the image areas will appear broken.
+Priority: Add at least the hero.jpg and cottage photos first!
+
+
+Questions? Contact your web developer for assistance.

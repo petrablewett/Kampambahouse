@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kampamba House</title>
+    <meta name="description" content="Explore our stunning gallery showcasing the beauty of Kampamba House cottages, grounds, and experiences.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Kampamba House</a>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="btn-book">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 60vh; background-image: linear-gradient(rgba(58, 58, 58, 0.4), rgba(58, 58, 58, 0.4)), url('images/gallery-hero.jpg');">
+        <div class="hero-content">
+            <h1 style="font-size: 4rem;">Gallery</h1>
+            <p>A Visual Journey Through Kampamba House</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="section" style="padding: 3rem 5%;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <div class="gallery-filters" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all" style="padding: 0.8rem 2rem; font-family: 'Lato', sans-serif; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; background-color: var(--dark-brown); color: var(--off-white); border: none; cursor: pointer; transition: all 0.3s ease;">All</button>
+                <button class="filter-btn" data-filter="cottages" style="padding: 0.8rem 2rem; font-family: 'Lato', sans-serif; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; background-color: transparent; color: var(--dark-brown); border: 2px solid var(--dark-brown); cursor: pointer; transition: all 0.3s ease;">Cottages</button>
+                <button class="filter-btn" data-filter="grounds" style="padding: 0.8rem 2rem; font-family: 'Lato', sans-serif; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; background-color: transparent; color: var(--dark-brown); border: 2px solid var(--dark-brown); cursor: pointer; transition: all 0.3s ease;">Grounds</button>
+                <button class="filter-btn" data-filter="experiences" style="padding: 0.8rem 2rem; font-family: 'Lato', sans-serif; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; background-color: transparent; color: var(--dark-brown); border: 2px solid var(--dark-brown); cursor: pointer; transition: all 0.3s ease;">Experiences</button>
+            </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Hill View Double Cottage Images -->
+            <div class="gallery-item" data-category="cottages">
+                <img src="images/gallery/hillview-double-1.jpg" alt="Hill View Double Cottage Exterior">
+                <div class="gallery-overlay">
+                    <h3>Hill View Double Cottage</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="cottages">
+                <img src="images/gallery/hillview-double-interior.jpg" alt="Hill View Double Cottage Interior">
+                <div class="gallery-overlay">
+                    <h3>Spacious Interior</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="cottages">
+                <img src="images/gallery/hillview-double-bedroom.jpg" alt="Hill View Double Cottage Bedroom">
+                <div class="gallery-overlay">
+                    <h3>Comfortable Bedroom</h3>
+                </div>
+            </div>
+
+            <!-- Hill View Studio Cottage Images -->
+            <div class="gallery-item" data-category="cottages">
+                <img src="images/gallery/hillview-studio-1.jpg" alt="Hill View Studio Cottage">
+                <div class="gallery-overlay">
+                    <h3>Hill View Studio Cottage</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="cottages">
+                <img src="images/gallery/hillview-studio-interior.jpg" alt="Hill View Studio Interior">
+                <div class="gallery-overlay">
+                    <h3>Cozy Studio Space</h3>
+                </div>
+            </div>
+
+            <!-- Glamping Cottage Images -->
+            <div class="gallery-item" data-category="cottages">
+                <img src="images/gallery/glamping-1.jpg" alt="Glamping Cottage Exterior">
+                <div class="gallery-overlay">
+                    <h3>Glamping Experience</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="cottages">
+                <img src="images/gallery/glamping-interior.jpg" alt="Glamping Cottage Interior">
+                <div class="gallery-overlay">
+                    <h3>Luxury Camping</h3>
+                </div>
+            </div>
+
+            <!-- Grounds Images -->
+            <div class="gallery-item" data-category="grounds">
+                <img src="images/gallery/grounds-1.jpg" alt="Kampamba House Grounds">
+                <div class="gallery-overlay">
+                    <h3>Beautiful Landscapes</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="grounds">
+                <img src="images/gallery/grounds-2.jpg" alt="Hill Views">
+                <div class="gallery-overlay">
+                    <h3>Panoramic Hill Views</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="grounds">
+                <img src="images/gallery/grounds-3.jpg" alt="Nature Trails">
+                <div class="gallery-overlay">
+                    <h3>Nature Trails</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="grounds">
+                <img src="images/gallery/sunset.jpg" alt="Sunset at Kampamba">
+                <div class="gallery-overlay">
+                    <h3>Sunset Views</h3>
+                </div>
+            </div>
+
+            <!-- Experience Images -->
+            <div class="gallery-item" data-category="experiences">
+                <img src="images/gallery/wine-tasting-1.jpg" alt="Wine Tasting Event">
+                <div class="gallery-overlay">
+                    <h3>Wine Tasting</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="experiences">
+                <img src="images/gallery/wine-tasting-2.jpg" alt="Wine Selection">
+                <div class="gallery-overlay">
+                    <h3>Curated Wine Selection</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="experiences">
+                <img src="images/gallery/photoshoot-1.jpg" alt="Engagement Photoshoot">
+                <div class="gallery-overlay">
+                    <h3>Engagement Photoshoot</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="experiences">
+                <img src="images/gallery/photoshoot-2.jpg" alt="Portrait Session">
+                <div class="gallery-overlay">
+                    <h3>Portrait Sessions</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="grounds">
+                <img src="images/gallery/outdoor-seating.jpg" alt="Outdoor Seating Area">
+                <div class="gallery-overlay">
+                    <h3>Outdoor Seating</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="cottages">
+                <img src="images/gallery/veranda.jpg" alt="Cottage Veranda">
+                <div class="gallery-overlay">
+                    <h3>Private Verandas</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.95); z-index: 2000; justify-content: center; align-items: center;">
+        <span class="close-lightbox" style="position: absolute; top: 2rem; right: 3rem; font-size: 3rem; color: white; cursor: pointer;">&times;</span>
+        <img id="lightbox-img" src="" alt="" style="max-width: 90%; max-height: 90%; object-fit: contain;">
+        <button class="prev-lightbox" style="position: absolute; left: 2rem; top: 50%; transform: translateY(-50%); font-size: 3rem; color: white; background: none; border: none; cursor: pointer;">&#10094;</button>
+        <button class="next-lightbox" style="position: absolute; right: 2rem; top: 50%; transform: translateY(-50%); font-size: 3rem; color: white; background: none; border: none; cursor: pointer;">&#10095;</button>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: #C9B8A3; text-align: center; padding: 6rem 5%;">
+        <h2 style="color: #FAF8F3; margin-bottom: 1.5rem;">Experience It for Yourself</h2>
+        <p style="color: #FAF8F3; font-size: 1.2rem; margin-bottom: 2.5rem;">Book your stay and create your own memories at Kampamba House</p>
+        <a href="booking.html" class="btn btn-primary" style="background-color: #6B5744;">Book Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Kampamba House</h3>
+                <p>A self-catering rural retreat in the outskirts of Lusaka, offering tranquility, luxury, and unforgettable experiences.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="accommodations.html">Accommodations</a></p>
+                <p><a href="experiences.html">Experiences</a></p>
+                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="booking.html">Book Now</a></p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@kampambahouse.com</p>
+                <p>Phone: +260 951 586 142</p>
+                <p>Lusaka, Zambia</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/kampambahouse" target="_blank" aria-label="Facebook">📘</a>
+                    <a href="https://instagram.com/kampambahouse" target="_blank" aria-label="Instagram">📷</a>
+                    <a href="https://wa.me/260951586142" target="_blank" aria-label="WhatsApp">💬</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kampamba House. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

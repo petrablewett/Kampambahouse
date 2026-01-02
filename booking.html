@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - Kampamba House</title>
+    <meta name="description" content="Book your stay at Kampamba House. Check availability and reserve your cottage or experience today.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Kampamba House</a>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="btn-book">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 50vh; background-image: linear-gradient(rgba(58, 58, 58, 0.4), rgba(58, 58, 58, 0.4)), url('images/booking-hero.jpg');">
+        <div class="hero-content">
+            <h1 style="font-size: 3.5rem;">Book Your Stay</h1>
+            <p>Your Rural Retreat Awaits</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="section">
+        <div class="booking-container">
+            <div class="section-title" style="text-align: left; margin-bottom: 3rem;">
+                <p class="section-subtitle">Reserve Your Experience</p>
+                <h2 style="margin-bottom: 1rem;">Booking Request Form</h2>
+                <p style="color: var(--text-light);">Complete the form below to request your booking. We'll check availability and confirm your reservation within 24 hours.</p>
+            </div>
+
+            <form id="bookingForm">
+                <!-- Booking Type -->
+                <div class="form-group">
+                    <label for="bookingType">Booking Type *</label>
+                    <select id="bookingType" name="bookingType" required>
+                        <option value="">Select booking type</option>
+                        <option value="accommodation">Accommodation</option>
+                        <option value="wine-private">Wine Tasting - Private Group</option>
+                        <option value="wine-public">Wine Tasting - Public Event</option>
+                        <option value="photoshoot">Photoshoot Session</option>
+                    </select>
+                </div>
+
+                <!-- Accommodation Selection (shown when accommodation is selected) -->
+                <div class="form-group" id="accommodationGroup" style="display: none;">
+                    <label for="accommodation">Select Cottage *</label>
+                    <select id="accommodation" name="accommodation">
+                        <option value="">Choose your cottage</option>
+                        <option value="hillview-double">Hill View Double Cottage - K2,000/night</option>
+                        <option value="hillview-studio">Hill View Studio Cottage - K1,500/night</option>
+                        <option value="glamping">Glamping Cottage - K1,200/night</option>
+                    </select>
+                </div>
+
+                <!-- Date Selection -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkIn">Check-in Date *</label>
+                        <input type="date" id="checkIn" name="checkIn" required>
+                    </div>
+                    <div class="form-group" id="checkOutGroup">
+                        <label for="checkOut">Check-out Date *</label>
+                        <input type="date" id="checkOut" name="checkOut">
+                    </div>
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adults">Adults *</label>
+                        <input type="number" id="adults" name="adults" min="1" value="2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="children">Children</label>
+                        <input type="number" id="children" name="children" min="0" value="0">
+                    </div>
+                </div>
+
+                <!-- Guest Information -->
+                <div class="section-title" style="text-align: left; margin: 3rem 0 2rem 0;">
+                    <h3>Guest Information</h3>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="form-group">
+                    <label for="specialRequests">Additional Notes</label>
+                    <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any special requirements, accessibility needs, or additional information we should know..."></textarea>
+                </div>
+
+                <!-- Availability Calendar -->
+                <div class="calendar-container">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--dark-brown);">Check Availability</h3>
+                    <div id="calendar"></div>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                        <span style="display: inline-block; width: 15px; height: 15px; background-color: #dc3545; margin-right: 5px;"></span> Unavailable
+                        <span style="display: inline-block; width: 15px; height: 15px; background-color: #28a745; margin-left: 15px; margin-right: 5px;"></span> Available
+                    </p>
+                </div>
+
+                <!-- Booking Summary -->
+                <div id="bookingSummary" class="availability-info" style="display: none;">
+                    <h3 style="color: var(--dark-brown); margin-bottom: 1rem;">Booking Summary</h3>
+                    <div id="summaryContent"></div>
+                </div>
+
+                <!-- Deposit Information -->
+                <div class="deposit-info">
+                    <h3>Payment Instructions</h3>
+                    <p style="color: var(--off-white); margin-bottom: 1.5rem;">Upon confirmation of your booking, please make your deposit to the following account:</p>
+                    <div class="deposit-details">
+                        <p><strong>Bank:</strong> FNB</p>
+                        <p><strong>Account Name:</strong> BLEWETT BURGESS LIMITED</p>
+                        <p><strong>Account Number:</strong> 63119024402</p>
+                        <p><strong>Branch:</strong> CAIRO ROAD</p>
+                        <p><strong>Branch Code:</strong> 260050</p>
+                        <p><strong>Swift Code:</strong> FIRNZMLX</p>
+                    </div>
+                    <p style="color: var(--off-white); margin-top: 1.5rem; font-size: 0.95rem;">
+                        <strong>Note:</strong> A 50% deposit is required to secure your booking. The remaining balance is due 7 days before your arrival.
+                        Please send proof of payment to bookings@kampamba.house
+                    </p>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="form-group" style="margin-top: 2rem;">
+                    <label style="display: flex; align-items: flex-start; cursor: pointer; text-transform: none;">
+                        <input type="checkbox" id="terms" name="terms" required style="width: auto; margin-right: 10px; margin-top: 5px;">
+                        <span>I agree to the terms and conditions, including the cancellation policy. Cancellations made 14 days or more before check-in receive a full refund. Cancellations made less than 14 days before check-in forfeit the deposit.</span>
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem; font-size: 1.1rem; margin-top: 2rem;">
+                    Submit Booking Request
+                </button>
+
+                <!-- Loading and Success Messages -->
+                <div id="formMessage" style="margin-top: 1.5rem; padding: 1rem; display: none; border-radius: 0;"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" style="background-color: #F5F1E8; text-align: center; padding: 5rem 5%;">
+        <h2 style="margin-bottom: 1rem;">Need Assistance?</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Our team is here to help with your booking</p>
+        <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+            <div>
+                <p style="font-family: 'Lato', sans-serif; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--medium-brown); margin-bottom: 0.5rem;">Email</p>
+                <p style="font-size: 1.1rem; color: var(--dark-brown);">bookings@kampamba.house</p>
+                <p style="font-size: 0.95rem; color: var(--text-light); margin-top: 0.3rem;">info@kampambahouse.com</p>
+            </div>
+            <div>
+                <p style="font-family: 'Lato', sans-serif; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--medium-brown); margin-bottom: 0.5rem;">Phone</p>
+                <p style="font-size: 1.2rem; color: var(--dark-brown);">+260 951 586 142</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Kampamba House</h3>
+                <p>A self-catering rural retreat in the outskirts of Lusaka, offering tranquility, luxury, and unforgettable experiences.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="accommodations.html">Accommodations</a></p>
+                <p><a href="experiences.html">Experiences</a></p>
+                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="booking.html">Book Now</a></p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@kampambahouse.com</p>
+                <p>Phone: +260 951 586 142</p>
+                <p>Lusaka, Zambia</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/kampambahouse" target="_blank" aria-label="Facebook">📘</a>
+                    <a href="https://instagram.com/kampambahouse" target="_blank" aria-label="Instagram">📷</a>
+                    <a href="https://wa.me/260951586142" target="_blank" aria-label="WhatsApp">💬</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kampamba House. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+
+    <!-- Google Calendar API -->
+    <script src="https://apis.google.com/js/api.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

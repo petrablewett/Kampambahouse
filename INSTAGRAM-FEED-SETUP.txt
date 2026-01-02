@@ -1,0 +1,130 @@
+═══════════════════════════════════════════════════════════════════
+  INSTAGRAM FEED SETUP - 5 MINUTE GUIDE
+═══════════════════════════════════════════════════════════════════
+
+Get your Instagram photos flowing on your website in 5 easy steps!
+
+STEP 1: GO TO SNAPWIDGET
+═══════════════════════════════════════════════════════════════════
+Open your web browser and go to:
+→ https://snapwidget.com
+
+Click the big button: "Create Widget" (it's FREE!)
+
+
+STEP 2: CHOOSE WIDGET TYPE
+═══════════════════════════════════════════════════════════════════
+• Select: INSTAGRAM
+• Layout: Choose "Grid" (shows photos in a nice grid)
+• Click "Next"
+
+
+STEP 3: ENTER YOUR INSTAGRAM
+═══════════════════════════════════════════════════════════════════
+• Username: kampambahouse
+• Number of posts: 6 (or 9 for more photos)
+• Click "Next"
+
+
+STEP 4: CUSTOMIZE APPEARANCE
+═══════════════════════════════════════════════════════════════════
+Match your website's colors:
+
+LAYOUT SETTINGS:
+• Columns: 3
+• Spacing: Medium
+• Photo size: Large
+
+COLOR SETTINGS:
+• Background color: #FAF8F3 (off-white)
+• Hover effect: Zoom
+• Show captions: Yes (optional)
+
+Click "Next" when done
+
+
+STEP 5: GET THE CODE
+═══════════════════════════════════════════════════════════════════
+• You'll see "Widget Successfully Created!"
+• Copy the ENTIRE code (it looks like this):
+
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/XXXXX" ...></iframe>
+
+• Copy EVERYTHING including the <script> and <iframe> tags
+
+
+STEP 6: ADD TO YOUR WEBSITE
+═══════════════════════════════════════════════════════════════════
+1. Open: index.html
+2. Find line 153 that says: <!-- REPLACE THIS COMMENT WITH YOUR SNAPWIDGET CODE -->
+3. Delete lines 153-179 (the comment and placeholder)
+4. Paste your SnapWidget code in that spot
+5. Save the file
+
+
+EXAMPLE OF WHAT IT SHOULD LOOK LIKE:
+═══════════════════════════════════════════════════════════════════
+
+Before (lines 153-179):
+    <!-- REPLACE THIS COMMENT WITH YOUR SNAPWIDGET CODE -->
+    ... [all the placeholder code] ...
+
+After:
+    <!-- SnapWidget -->
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/1234567"
+        class="snapwidget-widget"
+        allowtransparency="true"
+        frameborder="0"
+        scrolling="no"
+        style="border:none; overflow:hidden; width:100%;"></iframe>
+
+
+STEP 7: TEST IT!
+═══════════════════════════════════════════════════════════════════
+1. Refresh your website in the browser
+2. Scroll down to "Follow Our Journey" section
+3. You should see your Instagram photos!
+4. They update automatically when you post new content
+
+
+TROUBLESHOOTING:
+═══════════════════════════════════════════════════════════════════
+
+Photos not showing?
+→ Make sure you copied the ENTIRE code from SnapWidget
+→ Check that your Instagram account is public
+→ Wait 1-2 minutes for SnapWidget to load photos
+
+Code not working?
+→ Make sure you deleted the placeholder completely
+→ Don't mix the SnapWidget code with placeholder code
+→ Paste ONLY the SnapWidget code
+
+Still having issues?
+→ Try a different browser
+→ Clear your browser cache (Ctrl+Shift+R or Cmd+Shift+R)
+→ Contact SnapWidget support: https://snapwidget.com/support
+
+
+ALTERNATIVE: SIMPLE INSTAGRAM LINK
+═══════════════════════════════════════════════════════════════════
+If you prefer to keep it simple without the feed:
+• The current placeholder works great!
+• Visitors click "View Our Instagram" to see your photos
+• No setup required - it's already working!
+
+
+THAT'S IT!
+═══════════════════════════════════════════════════════════════════
+Your Instagram photos will now flow through your website automatically!
+
+Every time you post on Instagram, it appears on your website.
+
+✓ Free forever
+✓ Updates automatically
+✓ Mobile-friendly
+✓ Matches your website design
+
+═══════════════════════════════════════════════════════════════════
