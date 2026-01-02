@@ -89,6 +89,33 @@ function initializeBookingForm() {
     if (bookingForm) {
         bookingForm.addEventListener('submit', handleFormSubmit);
     }
+
+    // Handle URL parameters for pre-selecting options
+    const urlParams = new URLSearchParams(window.location.search);
+    const typeParam = urlParams.get('type');
+    const roomParam = urlParams.get('room');
+    const experienceParam = urlParams.get('experience');
+
+    // Pre-select booking type
+    if (typeParam === 'accommodation' || roomParam) {
+        bookingType.value = 'accommodation';
+        accommodationGroup.style.display = 'block';
+        checkOutGroup.style.display = 'block';
+        document.getElementById('accommodation').required = true;
+        checkOutInput.required = true;
+
+        // Pre-select specific room if provided
+        if (roomParam && accommodationSelect) {
+            accommodationSelect.value = roomParam;
+        }
+    } else if (experienceParam) {
+        bookingType.value = experienceParam;
+    }
+
+    // Trigger change event to update UI
+    if (bookingType.value) {
+        bookingType.dispatchEvent(new Event('change'));
+    }
 }
 
 // Initialize FullCalendar
