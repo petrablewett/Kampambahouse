@@ -15,7 +15,8 @@ const PRICING = {
     'glamping': 1200,
     'wine-private': 1000,
     'wine-public': 1000,
-    'photoshoot': 500
+    'photoshoot': 500,
+    'hiking': 200
 };
 
 let calendar;
