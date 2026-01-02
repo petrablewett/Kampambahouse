@@ -10,7 +10,7 @@ const GOOGLE_CALENDAR_CONFIG = {
 
 // Pricing information
 const PRICING = {
-    'hillview-double': 2000,
+    'honeysuckle': 2000,
     'hillview-studio': 1500,
     'glamping': 1200,
     'wine-private': 1000,
